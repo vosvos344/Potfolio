@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie ie8" lang="en">
+<![endif]-->
+<!--[if (gte IE 8)|!(IE)]>
+<!-->
 <html class="no-js" lang="kr">
+<!--<![endif]-->
+
 <head>
 
     <!--- Basic Page Needs
@@ -16,15 +23,23 @@
 
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Script
    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
     <!-- Favicons
 	================================================== -->
     <link rel="shortcut icon" href="favicon.png">
 
 </head>
+
 <body>
-        <div id="loading">
+    <div id="loading">
         <div class="loading_img">
 
                         <p><span>P</span><span>O</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span></p>
@@ -53,12 +68,961 @@
 -->
         </div>
     </div>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Header
+   ================================================== -->
+    <header id="home">
+
+        <nav id="nav-wrap">
+
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+            <ul id="nav" class="nav">
+                <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+                <li><a class="smoothscroll" href="#about">About Me</a></li>
+                <li><a class="smoothscroll" href="#resume">Profile</a></li>
+                <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+                <li><a class="smoothscroll" href="#testimonials">Wise Saying</a></li>
+            </ul> <!-- end #nav -->
+
+        </nav> <!-- end #nav-wrap -->
+
+        <div class="row banner">
+            <div class="banner-text">
+                <h1 class="responsive-headline">Hwan Jae L.</h1>
+                <h3>안녕하세요. <span>'Lee Hwan Jae'</span> Portfolio 사이트에 오신걸 환영합니다.<br>
+                    간략하고 심플하게 제가 만든 포트폴리오를 감상하고 가주시면 좋겠습니다.</h3>
+                <hr />
+                <!--
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+-->
+                <img class="main_banner" src="images/portfolio/banner_main.png">
+            </div>
+        </div>
+
+        <p class="scrolldown">
+            <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+        </p>
+
+    </header> <!-- Header End -->
+
+
+    <!-- About Section
+   ================================================== -->
+    <section id="about">
+
+        <div class="row">
+
+            <div class="three columns">
+
+                <img class="profile-pic" src="images/profilepic.jpg" alt="" />
+
+            </div>
+
+            <div class="nine columns main-col">
+
+                <h2>About Me</h2>
+
+                <p>
+                    안녕하세요! 저는 <span class="about_me">신입 웹디자인&프론트엔드</span>를 꿈꾸고 있는 이환재입니다.<br>
+                    먼저 소중한 시간을 내어 제 포트폴리오 사이트에 방문해 주셔서 감사합니다.
+                    <br>
+                    중학생때 처음 메모장으로 HTML을 접했을 때, 그저 메모용도로만 알고 있었던<br>
+                    메모장으로 홈페이지가 만들어진다는 신세계를 맛 보면서 관심이 생기게 되었지만,<br>
+                    고등학생때 특성화고교로 전기조선과로 가게 되면서 꿈을 포기하게 되었습니다.
+                    <br>
+                    하지만, 쉽게 저버릴 수 없던 어릴 때 저의 꿈은 주변 사람들의 조언을 뒤로 한채<br>
+                    대학교를 컴퓨터 공학과로 올 수 있게 되었습니다.<br>
+                    <br>
+                    그렇지만, 생각과는 달리 학교내에서는 웹에 관한 전공수업이 따로 없었기에,<br>
+                    독학으로 밖에 할 수 없었고, 최대한 지식과 실전 경험을 늘리고 싶어<br>
+                    <span class="about_me">전문서적이나 가르침을 받을 수 있는 곳을 찾아 배우고 있습니다.</span><br>
+                    아직도 화련한 스킬이나 완벽한 역량을 갖추지 않았지만,<br>
+                    <span class="about_me">무엇보다 잘하고 싶고, 내가 정말 하고 싶었던 일이기 때문에 끈기와 열정이 있습니다.</span><br>
+                    또 웹 디자이너로서 미적감각도 뛰어나야 해서 많은 디자인들을 보며 미적역량도 공부 중이며<br>
+                    목적과 사용성을 고려할 수 있는 방법에 대해 끊임없이 공부하고 있습니다.<br>
+                    <br>
+                    이제 사회라는 새로운 출발을 앞둔 지금 많이 설레고 긴장되지만<br>
+                    더이상 배울 것이 없을 정도로 '완벽'하다 라는 단어를 쓸 수 있도록,<br>
+                    겸손한 자세로 배움을 게을리하지 않는 사람이 되겠습니다.
+                    <br>
+                    끝까지 읽어주셔서 감사합니다
+                </p>
+
+                <div class="row">
+
+                    <div class="columns contact-details">
+
+                        <h2>Contact Details</h2>
+                        <p class="address">
+                            <span>Hwan Jae Lee</span><br>
+                            <span>부산광역시 연제구<br>
+                                중앙천로37번가길 16-2
+                            </span><br>
+                            <span>010-9177-6357</span><br>
+                            <span>vosvos344@gmail.com</span>
+                        </p>
+
+                    </div>
+
+                    <!--
+                    <div class="columns download">
+                        <p>
+                            <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                        </p>
+                    </div>
+-->
+
+                </div> <!-- end row -->
+
+            </div> <!-- end .main-col -->
+
+        </div>
+
+    </section> <!-- About Section End-->
+
+
+    <!-- Resume Section
+   ================================================== -->
+    <section id="resume">
+
+        <!-- Education
+      ----------------------------------------------- -->
+        <div class="row education">
+
+            <div class="three columns header-col">
+                <h1><span>Education</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+                        <h3>동의대학교</h3>
+                        <p class="info">컴퓨터 공학과<span>&bull;</span> <em class="date">2020.02 졸업</em></p>
+
+                        <p>
+                            2020.02에 무사히 4년제를 끝맞춰 동의대학교 컴퓨터공학과를 졸업하였으며,
+                            많은 학생들과 친하게 지내었고,<br>학교에서 주어진 과제 및 프로젝트를 수행하며 실력을 향상 시키며 공부해왔습니다.<br>
+                            대학교 졸업 후 조금 더 실력을 늘리고자 학원 및 프로젝트를 수행하며 공부중입니다.
+                        </p>
+
+                    </div>
+
+                </div> <!-- item end -->
+
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+                        <h3>동의공업고등학교</h3>
+                        <p class="info">전기 조선과 <span>&bull;</span> <em class="date">2014.02 졸업</em></p>
+
+                        <p>
+                            2014.02에 무사히 3년을 마무리 지어 동의공업고등학교 전기조선과를 졸업하였으며, 친구들과 원만한 관계를 유지하며 학창생활을 하였고, 당장 돈을 벌기 위하여 3학년 때 자격증을 취득 후 사회에 발걸음을 옮겼습니다.<br>
+                            하지만 꿈이였던 웹 디자인의 길을 다시 걷고 싶어 컴퓨터공학과로 대학교로 진학하였습니다.
+                        </p>
+
+                    </div>
+
+                </div> <!-- item end -->
+
+            </div> <!-- main-col end -->
+
+        </div> <!-- End Education -->
+
+
+        <!-- Work
+      ----------------------------------------------- -->
+        <div class="row work">
+
+            <div class="three columns header-col">
+                <h1><span>study</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+                        <h3>부산IT교육센터</h3>
+                        <p class="info">반응형퍼블리싱&웹디자인 <span>&bull;</span> <em class="date">2020.02- 진행중</em></p>
+
+                        <p>
+                            웹 디자인을 전반적으로 디자인분야인 포토샵 & 일러스트를 배우며,
+                            더 나아가 웹 퍼블리싱까지 배우고 있습니다.
+                        </p>
+
+                    </div>
+
+                </div> <!-- item end -->
+                <div class="study_hide">
+                    <div class="row item">
+
+                        <div class="twelve columns">
+
+                            <h3>캐시백 사이트</h3>
+                            <p class="info">프로젝트<span>&bull;</span> <em class="date">2020.04 - 진행중</em></p>
+
+                            <p>
+                                아는 사람의 권유로 시작하게 되었으며, 현재 8명의 인원으로
+                                기획,개발총괄,디자이너,프론트엔드,미들,백엔드 팀 구성이 되어있으며
+                                거기서 프론트엔드 대표로 작업을 진행 중 입니다.
+                            </p>
+
+                        </div>
+
+                    </div> <!-- item end -->
+
+                    <div class="row item">
+
+                        <div class="twelve columns">
+
+                            <h3>부산 대학 정보 사이트</h3>
+                            <p class="info">대학 프로젝트(5인)<span>&bull;</span> <em class="date">2019.10 - 2019.12</em></p>
+
+                            <p>
+                                대학교 프로젝트로 부산을 홍보하는 주제로 대학 입시생들을 위한
+                                부산내에 있는 대학교에 관한 정보를 모아놓은 사이트를 제작하였습니다.
+                                5인팀으로 팀 내에서 팀장을 맡았으며, 웹 퍼블리셔을 맡았습니다.
+                            </p>
+
+                        </div>
+
+                    </div> <!-- item end -->
+
+                    <div class="row item">
+
+                        <div class="twelve columns">
+
+                            <h3>부산 자취생들 중고 나라 사이트</h3>
+                            <p class="info">대학 프로젝트(4인)<span>&bull;</span> <em class="date">2019.10 - 2019.12</em></p>
+
+                            <p>
+                                대학교 프로젝트로 부산에 자취하면서 여유가 없는 사람들이나
+                                처분하기 힘든 물건들을 서로 교환하거나 팔 수 있는 사이트를 제작하였습니다.
+                                4인팀으로 팀 내에서 팀장을 맡았으며, 웹 퍼블리셔 및 총괄을 맡았습니다.
+                            </p>
+
+                        </div>
+
+                    </div> <!-- item end -->
+
+                    <div class="row item">
+
+                        <div class="twelve columns">
+
+                            <h3>보드게임카페 예약 정보 사이트</h3>
+                            <p class="info">졸업작품 (4인)<span>&bull;</span> <em class="date">2019.04 - 2019.06</em></p>
+
+                            <p>
+                                대학교 졸업작품으로 보드게임 카페에 대해 기본적인 정보들과
+                                현 카페에 존재하는 보드게임 수량 및 종류 또한, 미리가서 기다리지 않고
+                                남아 있는 좌석수와 시간대를 알아보고 QR코드를 이용하여 예약할 수 있는
+                                Pc와 모바일 사이트를 제작하였습니다.
+                                4인팀으로 프론트엔드 역활을 맡았습니다.
+                            </p>
+
+                        </div>
+
+                    </div> <!-- item end -->
+                </div>
+                <button class="study_btn">더보기</button>
+            </div> <!-- main-col end -->
+
+        </div> <!-- End Work -->
+
+
+        <!-- Skills
+      ----------------------------------------------- -->
+        <div class="row skill">
+
+            <div class="three columns header-col">
+                <h1><span>Skills</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+                <!--
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt.
+                </p>
+-->
+
+                <div class="bars">
+
+                    <div class="skill">
+                        <div class="con_wrap">
+                            <div class="develep">
+                                <h4 class="part">DEVELPMENT</h4>
+                                <div class="html"><img src="images/html_img.png" alt="html icon">
+                                    <progress value="0" max="100" id="pro1" class="progress">
+                                        <strong>progess:100%;</strong>
+                                    </progress>
+                                    <span>100%</span>
+                                    <p class="detail">- 웹 표준 준수 및 효율적인 구조로 제작이 가능합니다. </p>
+                                </div>
+                                <div class="css"><img src="images/css_img.png" alt="css icon">
+                                    <progress value="0" max="100" id="pro2" class="progress"></progress>
+                                    <span>90%</span>
+                                    <p class="detail">- Animate와 transform을 활용하며 브라우저 크기에 대응하는 미디어쿼리 사용이 가능합니다.</p>
+                                </div>
+                                <div class="js"><img src="images/js_img.png" alt="js icon">
+                                    <progress value="0" max="100" id="pro3" class="progress"></progress>
+                                    <span>85%</span>
+                                    <p class="detail">- Jqurey plug-in 사용 및 직접 구현이 가능하고 javascript 이해도가 있습니다.</p>
+                                </div>
+                                <div class="php"><img src="images/php.png" alt="php icon">
+                                    <progress value="0" max="100" id="pro6" class="progress"></progress>
+                                    <span>75%</span>
+                                    <p class="detail">- Php에 사용에 대해 이해도가 있으며 form을 이용하여 데이터를 주고 받을 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="grapic">
+                                <h4 class="part">GRAPHIC</h4>
+                                <div class="psd"><img src="images/psd_img.png" alt="photoshop icon">
+                                    <progress value="0" max="100" id="pro4" class="progress"></progress>
+                                    <span>70%</span>
+                                    <p class="detail">- 합성, 사진 편집 등을 통하여 웹 디자인 시안을 제작이 가능합니다.</p>
+                                </div>
+                                <div class="ai"><img src="images/ai_img.png" alt="ai icon">
+                                    <progress value="0" max="100" id="pro5" class="progress"></progress>
+                                    <span>70%</span>
+                                    <p class="detail">- 기본적인 지식을 통하여 편집이 가능합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end skill-bars -->
+
+            </div> <!-- main-col end -->
+
+        </div> <!-- End skills -->
+
+    </section> <!-- Resume Section End-->
+
+
+    <!-- Portfolio Section
+   ================================================== -->
+    <section id="portfolio">
+
+        <div class="row">
+
+            <div class="pc_poto">
+                <h1><span>BRANDING</span></h1>
+                <br>
+                <figure class="snip1200">
+                    <div class="sub_title_border">
+                        <h3>Project1<br>롯데시네마</h3>
+                    </div>
+                    <img src="images/pc_01.png" alt="pc_01" />
+                    <div class="pc_txt">
+                        <div class="pc_txt_left">
+                            <p class="nn">
+                                <span>사이트명</span><span class="span">롯데시네마</span>
+                            </p>
+                            <p class="nn">
+                                <span>컨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;셉</span>
+                                <span class="span">심플함</span>
+                            </p>
+                            <p class="nn">
+                                <span>컬&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;러</span>
+                                <span class="pc_color1"></span>
+                                <span class="pc_color2"></span>
+                                <span class="pc_color3"></span>
+                            </p>
+                        </div>
+                        <div class="pc_txt_right">
+                            <span>컨셉소개</span>
+                            <p>어두운은 느낌을 가진 영화관의 인상을 깨보자는 느낌으로
+                                기본적인 롯데 메인컬러를 사용하여 전반적인 배경이나 글씨체를
+                                밝은 느낌을 가짐으로써 무난한 컬러인 흰색한 검은색의 조화를 사용하여
+                                심플하면서도 깔끔한 분위기를 나타낼 수 있도록 제작하였습니다.</p>
+                        </div>
+                    </div>
+                    <a href="lotte.html" class="site">VIEW</a><a href="lotte_bx.html" class="bx">BX</a>
+                </figure>
+
+                <figure class="snip1200">
+                    <div class="sub_title_border">
+                        <h3>Project2<br>독립기념관</h3>
+                    </div>
+                    <img src="images/pc_02.png" alt="sq-sample31" />
+                    <div class="pc_txt">
+                        <div class="pc_txt_left">
+                            <p class="nn">
+                                <span>사이트명</span><span class="span">독립기념관</span>
+                            </p>
+                            <p class="nn">
+                                <span>컨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;셉</span>
+                                <span class="span">심플함,안정적</span>
+                            </p>
+                            <p class="nn">
+                                <span>컬&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;러</span>
+                                <span class="pc_color4"></span>
+                                <span class="pc_color5"></span>
+                                <span class="pc_color3"></span>
+                            </p>
+                        </div>
+                        <div class="pc_txt_right">
+                            <span>컨셉소개</span>
+                            <p>딱딱한 느낌에 독립기념관이라는 역사적인 느낌을 살려 고전적인 분위기로제작하였으며, 한민족의 불굴의 의지를 생각하여 로고색상을 중심으로 열정적인 컬러를 입혀 밝고 활기찬 느낌으로 심플하면서도 안정적인 느낌을 받을 수 있도록 제작하였습니다.</p>
+                        </div>
+                    </div>
+                    <a href="independent.html" class="site">VIEW</a><a href="independent_bx.html" class="bx">BX</a>
+                </figure>
+
+                <figure class="snip1200">
+                    <div class="sub_title_border">
+                        <h3>Project3<br>Chess Dice</h3>
+                    </div>
+                    <img src="images/pc_03.png" alt="sq-sample32" />
+                    <div class="pc_txt">
+                        <div class="pc_txt_left">
+                            <p class="nn">
+                                <span>사이트명</span><span class="span">Chess Dice</span>
+                            </p>
+                            <p class="nn">
+                                <span>컨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;셉</span>
+                                <span class="span">심플함,깔끔함</span>
+                            </p>
+                            <p class="nn">
+                                <span>컬&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;러</span>
+                                <span class="pc_color6"></span>
+                            </p>
+                        </div>
+                        <div class="pc_txt_right">
+                            <span>컨셉소개</span>
+                            <p>보드게임쇼핑몰을 생각하며, 심플하고 깔끔한 이미지를 연상시킬 수 있도록 파랑색계열을 사용하였으며, 상품에 눈낄을 주기 위해 이펙트를 입혀 강조시키는 형식으로 제작하였습니다.</p>
+                        </div>
+                    </div>
+                    <a href="chess_dice.html">VIEW</a>
+                </figure>
+            </div>
+
+            <div class="twelve columns collapsed">
+
+                <h1><span>VISUAL</span></h1>
+
+                <!--뷰 이미지-->
+                <!-- portfolio-wrapper -->
+                <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+                    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+                            <a href="#modal-01" title="">
+                                <img alt="" src="images/portfolio/banner_01.png">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>이디야</h5>
+                                        <p>배너(Banner)</p>
+                                    </div>
+                                </div>
+                                <div class="link-icon"><i class="icon-plus"></i></div>
+                            </a>
+
+                        </div>
+                    </div> <!-- item end -->
+
+                    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+                            <a href="#modal-02" title="">
+                                <img alt="" src="images/portfolio/banner_02.png">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>KB국민은행</h5>
+                                        <p>배너(Banner)</p>
+                                    </div>
+                                </div>
+                                <div class="link-icon"><i class="icon-plus"></i></div>
+                            </a>
+
+                        </div>
+                    </div> <!-- item end -->
+
+                    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+                            <a href="#modal-03" title="">
+                                <img alt="" src="images/portfolio/banner_03.png">
+                                <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>베스킨라빈스</h5>
+                                        <p>배너(Banner)</p>
+                                    </div>
+                                </div>
+                                <div class="link-icon"><i class="icon-plus"></i></div>
+                            </a>
+
+                        </div>
+                    </div> <!-- item end -->
+                    <div class="portfolio_plus">
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-04" title="">
+                                    <img alt="" src="images/portfolio/banner_04.png">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>삼진어묵</h5>
+                                            <p>배너(Banner)</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-05" title="">
+                                    <img alt="" src="images/portfolio/banner_05.png">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>오설록</h5>
+                                            <p>배너(Banner)</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-06" title="">
+                                    <img alt="" src="images/portfolio/popup_01.png">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>Chess Dice</h5>
+                                            <p>팝업창(Popup)</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-07" title="">
+                                    <img alt="" src="images/portfolio/popup_02.png">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>Chess Dice</h5>
+                                            <p>팝업창(Popup)</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-08" title="">
+                                    <img alt="" src="images/portfolio/card_01.png">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>롯데시네마</h5>
+                                            <p>카드뉴스(CardNews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-09" title="">
+                                    <img alt="" src="images/portfolio/card_02.png">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>독립기념관</h5>
+                                            <p>카드뉴스(CardNews)</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-10" title="">
+                                    <img alt="" src="images/portfolio/logo_01.png">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>클라온</h5>
+                                            <p>로고(Logo)</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+                    </div>
+                    <div class="plus_btn">
+                        <button>More +</button>
+                    </div>
+                </div> <!-- portfolio-wrapper end -->
+
+            </div> <!-- twelve columns end -->
+
+
+            <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+            <!--모델이미지-->
+            <div id="modal-01" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-banner_01.png" alt="" />
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-01 End -->
+
+            <div id="modal-02" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-banner_02.png" alt="" />
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-02 End -->
+
+            <div id="modal-03" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-banner_03.png" alt="" />
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-03 End -->
+
+            <div id="modal-04" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-banner_04.png" alt="" />
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-04 End -->
+
+            <div id="modal-05" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-banner_05.png" alt="" />
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-05 End -->
+
+            <div id="modal-06" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-popup_01.png" alt="" />
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-06 End -->
+
+            <div id="modal-07" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-popup_02.png" alt="" />
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-07 End -->
+
+            <div id="modal-08" class="popup-modal mfp-hide">
+                <img class="scale-with-grid" src="images/portfolio/modals/card_title_01.png" alt="" style="margin-top: 40px; margin-bottom: 20px;" />
+                <div class="scllow_new">
+                    <img class="scale-with-grid" src="images/portfolio/modals/m-card_01.jpg" alt="" />
+                </div>
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-08 End -->
+
+            <div id="modal-09" class="popup-modal mfp-hide">
+                <img class="scale-with-grid" src="images/portfolio/modals/card_title_02.png" alt="" style="margin-top: 40px; margin-bottom: 20px;" />
+                <div class="scllow_new">
+                    <img class="scale-with-grid" src="images/portfolio/modals/m-card_02.jpg" alt="" />
+                </div>
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-09 End -->
+
+            <div id="modal-10" class="popup-modal mfp-hide">
+
+                <img class="scale-with-grid" src="images/portfolio/modals/m-logo_01.png" alt="" />
+
+                <div class="link-box">
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div><!-- modal-09 End -->
+
+        </div> <!-- row End -->
+
+    </section> <!-- Portfolio Section End-->
+
+
+    <!-- Call-To-Action Section
+   ================================================== -->
+    <!--
+    <section id="call-to-action">
+
+        <div class="row">
+
+            <div class="two columns header-col">
+
+                <h1><span>Get Hosting.</span></h1>
+
+            </div>
+
+            <div class="seven columns">
+
+                <h2>EPILOGUE</h2>
+                <p><span>불가능이란 후회가 없을 만큼 모든것을 쏟아도 해결되지 않을때,</span><br>
+                    최선의 노력도 안해보고 안된다는 것은 포기이다.
+                </p>
+
+            </div>
+        </div>
+
+    </section>  Call-To-Action Section End
+-->
+
+
+    <!-- Testimonials Section
+   ================================================== -->
+    <section id="testimonials">
+
+        <div class="text-container">
+
+            <div class="row">
+
+                <div class="two columns header-col">
+
+                    <h1><span>명언</span></h1>
+
+                </div>
+
+                <div class="ten columns flex-container">
+
+                    <div class="flexslider">
+
+                        <ul class="slides">
+
+                            <li>
+                                <blockquote>
+                                    <p>To wait for someone else, or to expect someone else to make my life richer, or fuller, or more satisfying</p>
+                                    <p>누군가 다른 사람이 내 삶을보다윤택하게, 보다 알차게, 혹은보다 만족스럽게 해주길 기다리거나 기대하다 보면 나 자신은 줄곧 손발이 묶여 있는 꼴이 되고 만다.</p>
+                                    <cite>Katbleen Tierney Andrus(캐슬린 티어니 앤드러스)</cite>
+                                </blockquote>
+                            </li> <!-- slide ends -->
+
+                            <li>
+                                <blockquote>
+                                    <p>No one can make you feel inferior without your consent</p>
+                                    <p>그 누구도 당신의 동의 없이 당신을 열등하다고 느끼게 만들 수 없다.</p>
+                                    <cite>Eleanor Roosevelt(엘리너 루스벨트)</cite>
+                                </blockquote>
+                            </li> <!-- slide ends -->
+
+                        </ul>
+
+                    </div> <!-- div.flexslider ends -->
+
+                </div> <!-- div.flex-container ends -->
+
+            </div> <!-- row ends -->
+
+        </div> <!-- text-container ends -->
+
+    </section> <!-- Testimonials Section End-->
+
+
+    <!-- Contact Section
+   ================================================== -->
+    <!--
+    <section id="contact">
+        <div class="contact_inner">
+        <div class="row section-head">
+
+            <div class="two columns header-col">
+
+                <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                <p class="lead">
+                    언제든지 열린 마음으로 기다리고 있겠습니다. <br>언제든지 필요하실 때 연락주세요.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="eight columns">
+
+
+                <form action="" method="post" id="contactForm" name="contactForm">
+                    <fieldset>
+
+                        <div>
+                            <label for="contactName">Name <span class="required">*</span></label>
+                            <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+
+                        <div>
+                            <label for="contactEmail">Email <span class="required">*</span></label>
+                            <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+
+                        <div>
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                        </div>
+
+                        <div>
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                        </div>
+
+                        <div>
+                            <button class="submit">Submit</button>
+                            <span id="image-loader">
+                                <img alt="" src="images/loader.gif">
+                            </span>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+
+                <div id="message-warning"> Error boy</div>
+             
+                <div id="message-success">
+                    <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+                </div>
+
+            </div>
+
+            <aside class="four columns footer-widgets">
+
+                <div class="widget widget_contact">
+
+                    <h4>Address and Phone</h4>
+                    <p class="address">
+                        Hwan Jae Lee<br>
+                        부산광역시 연제구<br>
+                        중앙천로37번가길 16-2<br>
+                        <span>010-9177-6357</span>
+                    </p>
+
+                </div>
+            </aside>
+
+        </div>
+        </div>
+    </section>  Contact Section End
+-->
+
+
+    <!-- footer
+   ================================================== -->
+    <footer>
+
+        <div class="row">
+
+            <div class="twelve columns">
+
+                <!--
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+-->
+
+                <ul class="copyright">
+                    <li>&copy; Copyright 2020 Hwan Jae Lee</li>
+                    <li>Design by Portfolio</li>
+                </ul>
+
+            </div>
+
+            <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+        </div>
+
+    </footer> <!-- Footer End-->
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
 
     </script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/loading.js"></script>
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
