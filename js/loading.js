@@ -1,6 +1,6 @@
-$(function(){
-setTimeout(function () {
+$(document).ready(function () {
+    setTimeout(function () {
         $('#loading').fadeOut();
-        location.href="main.html";
+        location.href = "main.html";
     }, 4000);
 })
